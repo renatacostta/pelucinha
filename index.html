@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pelucinha Acessórios</title>
+  <meta name="description" content="Pelucinha Acessórios — acessórios para completar seu estilo.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="announcement">Pelucinha Acessórios · beleza nos detalhes</div>
+  <div class="header-main container">
+    <button class="icon-btn mobile-only" id="menuBtn" aria-label="Abrir menu">☰</button>
+    <a class="brand" href="index.html">Pelucinha <span>Acessórios</span></a>
+    <nav id="mainNav">
+      <a href="index.html">Início</a>
+      <a href="products.html">Produtos</a>
+      <a href="products.html?featured=true">Destaques</a>
+    </nav>
+    <div class="header-actions">
+      <a href="products.html" aria-label="Buscar">⌕</a>
+      <a href="cart.html" aria-label="Carrinho">🛍 <b id="cartCount">0</b></a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero container">
+    <div>
+      <p class="eyebrow">PELUCHINHA ACESSÓRIOS</p>
+      <h1>Seu estilo,<br><em>seu detalhe.</em></h1>
+      <p class="hero-copy">Acessórios escolhidos para deixar cada produção ainda mais especial.</p>
+      <a class="btn" href="products.html">Ver produtos</a>
+    </div>
+    <div class="hero-card"><div class="hero-shape">P</div></div>
+  </section>
+
+  <section class="section container">
+    <div class="section-heading"><div><p class="eyebrow">EXPLORE</p><h2>Categorias</h2></div></div>
+    <div id="categories" class="category-grid"><div class="loading">Carregando...</div></div>
+  </section>
+
+  <section class="section soft">
+    <div class="container">
+      <div class="section-heading">
+        <div><p class="eyebrow">ESCOLHAS</p><h2>Em destaque</h2></div>
+        <a href="products.html?featured=true">Ver todos →</a>
+      </div>
+      <div id="featuredProducts" class="product-grid"><div class="loading">Carregando...</div></div>
+    </div>
+  </section>
+
+  <section class="benefits container">
+    <div><strong>♡</strong><span><b>Feito para você</b><small>Detalhes que valorizam seu estilo.</small></span></div>
+    <div><strong>✦</strong><span><b>Compra fácil</b><small>Escolha seus favoritos com praticidade.</small></span></div>
+    <div><strong>✓</strong><span><b>Atendimento</b><small>Estamos aqui para ajudar.</small></span></div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div><div class="brand">Pelucinha <span>Acessórios</span></div><p>Beleza nos detalhes.</p></div>
+    <div><h4>Navegação</h4><a href="index.html">Início</a><a href="products.html">Produtos</a><a href="cart.html">Carrinho</a></div>
+    <div><h4>Contato</h4><a id="whatsappLink" href="#">WhatsApp</a><a id="instagramLink" href="#">Instagram</a></div>
+  </div>
+  <div class="copyright">© <span id="year"></span> Pelucinha Acessórios</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/config.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

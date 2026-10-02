@@ -1,0 +1,14 @@
+<!doctype html><html lang="pt-BR"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin — Pelucinha Acessórios</title><link rel="stylesheet" href="css/style.css"></head><body class="admin-body">
+<header class="admin-header"><div class="container header-main"><a class="brand" href="index.html">Pelucinha <span>Admin</span></a><div><button id="logoutBtn" class="btn secondary">Sair</button></div></div></header>
+<main class="container admin-page">
+<div id="authBox" class="panel"><h1>Acesso administrativo</h1><p>Entre com a conta autorizada no Supabase.</p><form id="loginForm"><input id="email" type="email" placeholder="E-mail" required><input id="password" type="password" placeholder="Senha" required><button class="btn">Entrar</button></form><p id="loginMsg" class="message"></p></div>
+<div id="dashboard" hidden>
+<div class="admin-title"><div><p class="eyebrow">PAINEL</p><h1>Gerenciar loja</h1></div><button id="newProductBtn" class="btn">+ Novo produto</button></div>
+<div class="stats" id="stats"></div>
+<div class="panel"><div class="panel-head"><h2>Produtos</h2><input id="adminSearch" placeholder="Buscar..."></div><div id="adminProducts"></div></div>
+<div class="panel"><div class="panel-head"><h2>Categorias</h2><button id="newCategoryBtn" class="btn secondary">+ Categoria</button></div><div id="adminCategories"></div></div>
+</div>
+</main>
+<div id="modal" class="modal" hidden><div class="modal-card"><button id="closeModal" class="modal-close">×</button><div id="modalContent"></div></div></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="js/config.js"></script><script src="js/admin.js"></script></body></html>
